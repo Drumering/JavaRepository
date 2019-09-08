@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head>
+	<title>Cadastrar Aluno</title>
+	<h:outputStylesheet name="style.css" library="css"/>
+</h:head> 
+<body> 
+	<h:form>
+		<h2>
+			<center>Cadastrar Aluno</center>
+		</h2>
+		<label>RA</label>
+		<h:inputText value="#{aluno.RA}" />
+		<label>Nome</label>
+		<h:inputText value="#{aluno.nome}" />
+		<label>Email</label>
+		<h:inputText value="#{aluno.email}" />
+		<label>Endereco</label>
+		<h:inputText value="#{aluno.endereco}" />
+		<label>Nota 1</label>
+		<h:inputText value="#{aluno.n1}" />
+		<label>Nota 2</label>
+		<h:inputText value="#{aluno.n1}" />
+		<label>Nota 3</label>
+		<h:inputText value="#{aluno.n3}" />
+		<h:commandButton action="#{appController.salvar(aluno)}" value="Salvar" />
+	</h:form>
+</body> 
+</html>
